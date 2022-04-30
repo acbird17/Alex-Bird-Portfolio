@@ -1,11 +1,10 @@
 body {
-  /* background: url("../images/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: gray;
-  position: relative; */
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 header {
@@ -19,7 +18,6 @@ header {
     rgb(43, 69, 109),
     rgba(96, 96, 233)
   );
-  /* background-color: #24405a; */
 }
 
 h1 {
@@ -67,8 +65,7 @@ main {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: gray;
-  z-index: 999;
+  background-color: rgb(34, 40, 58);
 }
 
 footer {
@@ -77,4 +74,40 @@ footer {
   padding: 2%;
   background-color: #13293d;
   color: #fff;
+}
+
+.skills {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skills button {
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px;
+  flex: 0 0 200px;
+  transform: rotate(5deg) skew(-10deg, -5deg);
+  box-shadow: gray 5px 3px, rgb(53, 53, 53) 10px 6px, black 15px 9px;
+  background-color: #13293d;
+  color: white;
+}
+
+.skills button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px gray;
+  font-size: 120%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
 }
