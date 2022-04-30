@@ -1,0 +1,59 @@
+body {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: gray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #24405a;
+  color: #fff;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  flex-direction: column;
+}
+
+.header-list a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.header-list a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px gray;
+  font-size: 175%;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+#bgimage {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: gray;
+  display: flex;
+}
