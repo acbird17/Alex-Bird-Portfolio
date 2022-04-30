@@ -1,10 +1,11 @@
 body {
-  background: url("../images/background.jpg") no-repeat center center fixed;
+  /* background: url("../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: gray;
+  position: relative; */
 }
 
 header {
@@ -12,12 +13,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: #24405a;
-  color: #fff;
+  background: linear-gradient(
+    0.25turn,
+    gray,
+    rgb(43, 69, 109),
+    rgba(96, 96, 233)
+  );
+  /* background-color: #24405a; */
 }
 
 h1 {
   font-size: 200%;
+  color: rgb(38, 41, 43);
 }
 
 .header-list {
@@ -48,12 +55,26 @@ h1 {
   }
 }
 
-#bgimage {
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+main {
   background: url("../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: gray;
+  z-index: 999;
+}
+
+footer {
   display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #13293d;
+  color: #fff;
 }
