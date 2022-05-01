@@ -25,8 +25,8 @@ header {
 }
 
 h1 {
-  font-size: 200%;
-  color: rgb(38, 41, 43);
+  font-size: 215%;
+  color: rgb(43, 2, 121);
 }
 
 .header-list {
@@ -37,7 +37,7 @@ h1 {
 }
 
 .header-list a {
-  color: #ffffff;
+  color: antiquewhite;
   font-weight: bold;
   text-decoration: none;
   font-size: 150%;
@@ -76,6 +76,7 @@ h1 {
   justify-content: space-evenly;
   background-color: green;
   order: -1;
+  z-index: 1;
 }
 
 .skills button {
@@ -88,7 +89,7 @@ h1 {
   transform: rotate(5deg) skew(-10deg, -5deg);
   box-shadow: gray 5px 3px, rgb(53, 53, 53) 10px 6px, black 15px 9px;
   background-color: #13293d;
-  color: white;
+  color: antiquewhite;
   height: 10%;
   justify-content: space-evenly;
 }
@@ -101,10 +102,15 @@ h1 {
   background-color: #1a4164;
 }
 
-#main .selected {
-  flex: 0 0 80vw;
+#flex {
+  display: flex;
+}
+
+.selected {
+  flex: 0 0 75vw;
   margin: 10% 10%;
   background-color: red;
+  z-index: 1;
 }
 
 footer {
@@ -117,5 +123,40 @@ footer {
     rgb(43, 69, 109),
     gray
   );
-  color: #fff;
+}
+
+#email {
+  text-decoration: none;
+  font-size: 150%;
+  color: antiquewhite;
+}
+
+#email:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px gray;
+  font-size: 160%;
+}
+
+#skill1content,
+#skill2content,
+#skill3content,
+#skill4content {
+  display: none;
+}
+
+#default:checked ~ #content div:nth-child(1),
+#skill1:checked ~ #content div:nth-child(2),
+#skill2:checked ~ #content div:nth-child(3),
+#skill3:checked ~ #content div:nth-child(4),
+#skill4:checked ~ #content div:nth-child(5) {
+  display: block;
+}
+
+#default:checked ~ #content #default,
+#skill1:checked ~ #content #default,
+#skill2:checked ~ #content #defaullt,
+#skill3:checked ~ #content #default,
+#skill4:checked ~ #content #default {
+  display: none;
 }
