@@ -79,7 +79,7 @@ h1 {
   z-index: 1;
 }
 
-.skills button {
+.skills label {
   border-style: solid;
   border-width: 1px;
   border-radius: 25px;
@@ -94,7 +94,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.skills button:hover {
+.skills label:hover {
   cursor: pointer;
   text-decoration: underline;
   text-shadow: 2px 2px gray;
@@ -155,7 +155,7 @@ footer {
 
 #default:checked ~ #content #default,
 #skill1:checked ~ #content #default,
-#skill2:checked ~ #content #defaullt,
+#skill2:checked ~ #content #default,
 #skill3:checked ~ #content #default,
 #skill4:checked ~ #content #default {
   display: none;
