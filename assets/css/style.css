@@ -33,7 +33,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   min-width: 400px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .header-list a {
@@ -50,12 +50,12 @@ h1 {
   font-size: 175%;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .header-list {
     flex-direction: row;
     align-items: flex-end;
   }
-}
+} */
 
 #main {
   background: url("../images/background2.jpg") no-repeat center center fixed;
@@ -77,6 +77,10 @@ h1 {
   background-color: green;
   order: -1;
   z-index: 1;
+}
+
+#skills input {
+  display: none;
 }
 
 .skills label {
@@ -102,12 +106,7 @@ h1 {
   background-color: #1a4164;
 }
 
-#flex {
-  display: flex;
-}
-
 .selected {
-  flex: 0 0 75vw;
   margin: 10% 10%;
   background-color: red;
   z-index: 1;
@@ -145,7 +144,6 @@ footer {
   display: none;
 }
 
-#default:checked ~ #content div:nth-child(1),
 #skill1:checked ~ #content div:nth-child(2),
 #skill2:checked ~ #content div:nth-child(3),
 #skill3:checked ~ #content div:nth-child(4),
@@ -153,7 +151,6 @@ footer {
   display: block;
 }
 
-#default:checked ~ #content #default,
 #skill1:checked ~ #content #default,
 #skill2:checked ~ #content #default,
 #skill3:checked ~ #content #default,

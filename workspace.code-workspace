@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "..\\Content\\Week 1\\02-Advanced-CSS\\02-Advanced-CSS\\01-Activities"
+    },
+    {
+      "path": "..\\Content\\Week 1\\02-Advanced-CSS\\02-Advanced-CSS\\02-Challenge"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\Testing\\content-toggle"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Alex-Bird-Portfolio"
+  }
+}
