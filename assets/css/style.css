@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 header {
@@ -50,13 +50,6 @@ h1 {
   font-size: 175%;
 }
 
-/* @media screen and (min-width: 768px) {
-  .header-list {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-} */
-
 #main {
   background: url("../images/background2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -66,17 +59,18 @@ h1 {
   background-color: rgb(34, 40, 58);
   display: flex;
   flex: 1;
+  justify-content: center;
 }
 
-.skills {
-  flex: 0 0 20vw;
+.skills:not(.content) {
+  flex: 0 0 90vw;
   padding: 30px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  background-color: green;
+  /* background-color: green; */
   order: -1;
-  z-index: 1;
+  flex-direction: column;
 }
 
 #skills input {
@@ -89,13 +83,13 @@ h1 {
   border-radius: 25px;
   padding: 10px;
   margin: 20px;
-  flex: 0 0 70%;
   transform: rotate(5deg) skew(-10deg, -5deg);
   box-shadow: gray 5px 3px, rgb(53, 53, 53) 10px 6px, black 15px 9px;
   background-color: #13293d;
   color: antiquewhite;
   height: 10%;
   justify-content: space-evenly;
+  width: 150px;
 }
 
 .skills label:hover {
@@ -106,10 +100,17 @@ h1 {
   background-color: #1a4164;
 }
 
-.selected {
+.content {
+  flex: 1;
   margin: 10% 10%;
-  background-color: red;
+  color: white;
   z-index: 1;
+  text-decoration: none !important;
+}
+
+.content a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -144,16 +145,16 @@ footer {
   display: none;
 }
 
-#skill1:checked ~ #content div:nth-child(2),
-#skill2:checked ~ #content div:nth-child(3),
-#skill3:checked ~ #content div:nth-child(4),
-#skill4:checked ~ #content div:nth-child(5) {
+#skill1:checked ~ .content div:nth-child(2),
+#skill2:checked ~ .content div:nth-child(3),
+#skill3:checked ~ .content div:nth-child(4),
+#skill4:checked ~ .content div:nth-child(5) {
   display: block;
 }
 
-#skill1:checked ~ #content #default,
-#skill2:checked ~ #content #default,
-#skill3:checked ~ #content #default,
-#skill4:checked ~ #content #default {
+#skill1:checked ~ .content #default,
+#skill2:checked ~ .content #default,
+#skill3:checked ~ .content #default,
+#skill4:checked ~ .content #default {
   display: none;
 }
