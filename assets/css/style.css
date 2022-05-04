@@ -7,8 +7,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  /* width: 100vw; */
+  height: 900px;
 }
 
 header {
@@ -16,6 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
+  height: 15%;
   background: linear-gradient(
     0.25turn,
     gray,
@@ -60,10 +60,11 @@ h1 {
   display: flex;
   flex: 1;
   justify-content: center;
+  height: 70%;
 }
 
 .skills:not(.content) {
-  flex: 0 0 90vw;
+  flex: 0 0 75vw;
   padding: 30px;
   display: flex;
   flex-flow: row wrap;
@@ -87,7 +88,6 @@ h1 {
   box-shadow: gray 5px 3px, rgb(53, 53, 53) 10px 6px, black 15px 9px;
   background-color: #13293d;
   color: antiquewhite;
-  height: 10%;
   justify-content: space-evenly;
   width: 150px;
 }
@@ -100,42 +100,34 @@ h1 {
   background-color: #1a4164;
 }
 
+.skillsblock {
+  border: 5px solid red;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillsblock img {
+  border: 5px solid green;
+  height: 400px;
+  width: 315px;
+}
+
 .content {
   flex: 1;
   margin: 10% 10%;
-  color: white;
+  color: rgb(163, 168, 245);
   z-index: 1;
   text-decoration: none !important;
+  text-align: center;
 }
 
 .content a {
   text-decoration: none;
-  color: white;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background: linear-gradient(
-    0.25turn,
-    rgba(96, 96, 233),
-    rgb(43, 69, 109),
-    gray
-  );
-}
-
-#email {
-  text-decoration: none;
-  font-size: 150%;
-  color: antiquewhite;
-}
-
-#email:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-shadow: 2px 2px gray;
-  font-size: 160%;
+  color: rgb(163, 168, 245);
 }
 
 #skill1content,
@@ -157,4 +149,37 @@ footer {
 #skill3:checked ~ .content #default,
 #skill4:checked ~ .content #default {
   display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  height: 15%;
+  background: linear-gradient(
+    0.25turn,
+    rgba(96, 96, 233),
+    rgb(43, 69, 109),
+    gray
+  );
+}
+
+#email {
+  text-decoration: none;
+  font-size: 150%;
+  color: antiquewhite;
+}
+
+#email:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 2px 2px gray;
+  font-size: 160%;
+}
+
+@media screen and (min-width: 768) {
+  body {
+    flex-direction: row;
+  }
 }
